@@ -23,8 +23,15 @@
 /* .MENU  */
 
 .menu__lista {
-display: flex;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
 }
+
+.menu__lista li {
+    align-self: center;
+}
+
 
 .menu__lista:nth-child(2),
 .menu__lista:nth-child(3),
@@ -52,17 +59,17 @@ display: flex;
     display: flex;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    flex-flow: column wrap ;
+    flex-flow: column wrap;
 
 }
 
 @media (min-width: 834px) {
     /* CABECALHO */
- 
-    .cabecalho__pesquisar__item{
+
+    .cabecalho__pesquisar__item {
         display: block;
     }
- 
+
     /* RODAPÉ */
     .rodape__container {
         justify-content: space-between;
